@@ -13,8 +13,9 @@ def home():
 def analysis():
     # Try to get the URI from the JSON
     try:
-        get_json = request.get_json()
-        image_uri = get_json['uri']
+        # get_json = request.get_json()
+        # image_uri = get_json['uri']
+        image_uri = request.args.get('uri')
     except:
         return jsonify({'error': 'Missing URI in JSON'}), 400
     
