@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
+load_dotenv()
 
 # Get credentials from environment variables
 endpoint = os.getenv('AZURE_ENDPOINT')
