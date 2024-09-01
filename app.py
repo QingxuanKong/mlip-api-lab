@@ -29,7 +29,6 @@ def analysis():
     
         return jsonify(response_data), 200
     except:
-        return jsonify({'error': 'Error in processing'}), 500
 
 
 if __name__ == "__main__":
