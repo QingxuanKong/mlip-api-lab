@@ -61,7 +61,22 @@ The starter code hardcodes credentials in the code. This is a bad practice. Here
      AZURE_ENDPOINT=YOUR_ENDPOINT
      AZURE_KEY=YOUR_KEY
      ```
+
+2. **Update the `analyze.py`
    - Remove the hardcoded credentials from the `analyze.py`.
+   - Import the `.env` file using the script below:
+       ```bash
+       from dotenv import load_dotenv
+       import os
+
+       # Load environment variables from .env file
+       load_dotenv()
+
+       # Get credentials from environment variables
+       endpoint = os.getenv('AZURE_ENDPOINT')
+       key = os.getenv('AZURE_KEY')
+       ```
+
 
 2. **Add `.env` to `.gitignore`:**
     - Add `.env` to your `.gitignore` file to prevent committing the credentials to GitHub.
