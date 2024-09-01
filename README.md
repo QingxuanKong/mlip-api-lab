@@ -62,9 +62,9 @@ The starter code hardcodes credentials in the code. This is a bad practice. Here
      AZURE_KEY=YOUR_KEY
      ```
 
-2. **Update the `analyze.py`
+2. **Update the `analyze.py`:**
    - Remove the hardcoded credentials from the `analyze.py`.
-   - Import the `.env` file using the script below:
+   - Load the envoirnment variables from the `.env` file by adding the following code:
        ```bash
        from dotenv import load_dotenv
        import os
