@@ -1,4 +1,7 @@
 # Lab 1: Calling, Building, and Securing APIs
+
+Lab1 for 17-445 Machine Learning in Production
+
 In homework I1 you will use third-party machine learning APIs and in the group project you will develop your own APIs. In this lab, you will experiment with both, connecting to the Azure Vision API and providing your own API endpoint. 
 
 ## Deliverables
